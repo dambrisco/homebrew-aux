@@ -5,7 +5,6 @@ class Infer < Formula
   sha256 "7a611989ceb4ece0882b8f62ed574fa0e59b48425cede20144b854a0918e1757"
 
   def install
-    bin.install_symlink prefix/"infer"
     libexec.install Dir["*"]
     bin.install_symlink Dir["#{libexec}/infer/infer/bin/infer"]
     inreplace "#{libexec}/infer/infer/bin/infer", "os.path.dirname(__file__)", "os.path.dirname(os.path.realpath(__file__))"
