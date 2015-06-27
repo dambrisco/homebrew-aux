@@ -11,7 +11,7 @@ class Infer < Formula
 
   test do
     expected = <<-EOS.undent
-      Starting analysis (Infer version v0.1.0)
+      Starting analysis (Infer version v0.2.0)
       Analysis done
 
       1 file analyzed
@@ -24,7 +24,7 @@ class Infer < Formula
     assert_equal expected, actual
 
     expected = <<-EOS.undent
-      Starting analysis (Infer version v0.1.0)
+      Starting analysis (Infer version v0.2.0)
       Analysis done
 
       1 file analyzed
@@ -37,7 +37,7 @@ class Infer < Formula
     assert_equal expected, actual
 
     expected = <<-EOS.undent
-      Starting analysis (Infer version v0.1.0)
+      Starting analysis (Infer version v0.2.0)
       Analysis done
 
       1 file analyzed
