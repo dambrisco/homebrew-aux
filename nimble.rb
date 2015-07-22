@@ -12,6 +12,11 @@ class Nimble < Formula
   end
 
   test do
-    print "No tests available at this time\n"
+    result = shell_output("#{bin}/nimble --version").chomp
+    assert result.start_with? "nimble"
+
+    expected = "FAILURE: Please specify a search string."
+    actual = shell_output("#{bin}/nimble search", 1).chomp
+    assert_equal expected, actual
   end
 end
