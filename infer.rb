@@ -1,8 +1,8 @@
 class Infer < Formula
   desc "Infer is a static analysis tool that can analyze Java, Obj-C, and C"
   homepage "https://fbinfer.com/"
-  url "https://github.com/facebook/infer/releases/download/v0.2.0/infer-osx-v0.2.0.tar.xz"
-  sha256 "ef755c3f01ae3246cae8f67a914518cdff72d69d55172a45242ef11e2c62812f"
+  url "https://github.com/facebook/infer/releases/download/v0.3.0/infer-osx-v0.3.0.tar.xz"
+  sha256 "cfd17c647098baff2875f3ff4db994f2ee02e7b5577cde5fe59ee21ec57a2d44"
 
   def install
     libexec.install Dir["*"]
