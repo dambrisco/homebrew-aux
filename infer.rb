@@ -6,12 +6,12 @@ class Infer < Formula
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink Dir["#{libexec}/infer/infer/bin/infer"]
+    bin.install_symlink Dir["#{libexec}/infer/bin/infer"]
   end
 
   test do
     expected = <<-EOS.undent
-      Starting analysis (Infer version v0.2.0)
+      Starting analysis (Infer version v0.4.0)
       Analysis done
 
       1 file analyzed
@@ -24,7 +24,7 @@ class Infer < Formula
     assert_equal expected, actual
 
     expected = <<-EOS.undent
-      Starting analysis (Infer version v0.2.0)
+      Starting analysis (Infer version v0.4.0)
       Analysis done
 
       1 file analyzed
@@ -37,7 +37,7 @@ class Infer < Formula
     assert_equal expected, actual
 
     expected = <<-EOS.undent
-      Starting analysis (Infer version v0.2.0)
+      Starting analysis (Infer version v0.4.0)
       Analysis done
 
       1 file analyzed
