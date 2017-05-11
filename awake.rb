@@ -1,8 +1,8 @@
 class Awake < Formula
   desc "Keeps your computer from 💤"
   homepage "https://github.com/dambrisco/awake"
-  url "https://github.com/dambrisco/awake/archive/0.0.3.tar.gz"
-  sha256 "b45ad5351b2a90c8b489b1a807563eac7ce8baa5d9694e65c383b0ad16a8b52f"
+  url "https://github.com/dambrisco/awake/archive/0.0.4.tar.gz"
+  sha256 "3fecd0bcff050529b0ddc50a2f6bcdb2a5e9c7641a6e649c675e3cf53f80bdde"
 
   depends_on "jython"
 
