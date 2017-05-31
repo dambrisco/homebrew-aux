@@ -1,6 +1,6 @@
 require 'formula'
 
-class Ruby19 < Requirement # rubocop:disable Style/Documentation
+class Ruby19 < Requirement
   fatal true
   default_formula 'ruby'
 
@@ -26,7 +26,7 @@ class Ruby19 < Requirement # rubocop:disable Style/Documentation
   end
 end
 
-class Lunchy < Formula # rubocop:disable Style/Documentation
+class Lunchy < Formula
   homepage 'https://github.com/eddiezane/lunchy/'
   url 'http://assets.merqlove.ru.s3.amazonaws.com/lunchy/lunchy-0.10.1.tgz'
   sha256 '6c25f53f6509766f14e0e3c002b59b8d9ece6981319184c359e0c28d31b20aa1'
