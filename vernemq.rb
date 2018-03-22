@@ -18,7 +18,6 @@ class Vernemq < Formula
     datadir = var + "lib/vernemq"
 
     # Install the base files
-    libexec.install Dir["*"]
     logdir.mkpath
     datadir.mkpath
 
