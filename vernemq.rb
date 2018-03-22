@@ -22,7 +22,7 @@ class Vernemq < Formula
     datadir.mkpath
 
     # system "make", "rel"
-    system "LDFLAGS=-L/usr/local/opt/openssl/lib", "CFLAGS=-I/usr/local/opt/openssl/include", "make", "rel"
+    system "make", "rel", "LDFLAGS=-L/usr/local/opt/openssl/lib", "CFLAGS=-I/usr/local/opt/openssl/include"
 
     bin.write_exec_script libexec/"bin/vernemq"
     bin.write_exec_script libexec/"bin/vmq-admin"
