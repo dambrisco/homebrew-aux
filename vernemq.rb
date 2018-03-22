@@ -11,7 +11,7 @@ class Vernemq < Formula
 
   depends_on :macos => :mountain_lion
   depends_on :arch => :x86_64
-  depends_on :erlang
+  depends_on "erlang"
 
   def install
     logdir = var + "log/vernemq"
