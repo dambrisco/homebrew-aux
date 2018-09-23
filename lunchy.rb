@@ -2,7 +2,6 @@ require 'formula'
 
 class Ruby19 < Requirement
   fatal true
-  default_formula 'ruby'
 
   satisfy build_env: false do
     next unless which 'ruby'
